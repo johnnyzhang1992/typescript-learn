@@ -1,26 +1,9 @@
 # TypeScript 学习
 
-> 问题列表
+## 使用说明
 
-## 出现变量重名的情况
+>`read` 目录下文件为摘自[xcatliu/typescript-tutorial](https://github.com/xcatliu/typescript-tutorial)仓库的内容。
 
-在默认状态下，typescript 将变量作为全局变量处理，所以会出现冲突。
+> `examples` 目录下的文件为，学习过程中的demo.为.ts格式源码。
 
-### 解决办法
-
--   方法一
-
-    将运行环境其他运行环境。
-    可以在 tconfig.json 文件中声明：
-
-```json
-{
-	"compilerOptions": {
-		"lib": ["es2015"]
-	}
-}
-```
-
--   方法二
-
-    在脚本文件最后一行，添加 export {};。将文件声明为模块， 变量 name 限制在了 模块作用域下，就不会与全局作用域下的 name 产生冲突。
+跟目录下执行 `tsc` 会生成 `built` 文件夹，并且会生成example目录下转换过的js文件。

@@ -1,18 +1,13 @@
 {
-    "compilerOptions": {
-        "outDir": "./built",
-        "allowJs": true,
-        "target": "es2015",
-        "noImplicitReturns": true,
-        "allowUnreachableCode": true,
-        "allowUnusedLabels": true,
-        "noEmitOnError": true,
-        "lib": [
-            "es2015",
-            "DOM"
-        ]
-    },
-    "include": [
-        "./src/**/*"
-    ]
+	"compilerOptions": {
+		"outDir": "./built",
+		"allowJs": true,
+		"target": "es2015",
+		"noImplicitReturns": true,
+		"allowUnreachableCode": true,
+		"allowUnusedLabels": true,
+		"noEmitOnError": true,// 报错时，终止生成js文件
+		"lib": ["es2015", "DOM"]
+	},
+	"include": ["examples/*.ts"]
 }
